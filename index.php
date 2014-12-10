@@ -39,7 +39,7 @@
         
         <div class="jumbotron" style="margin-top: 0px; background-color: rgba(0, 0, 0, 0); box-shadow: 0 0 0 0;">
             <div class="container">
-                <h6 style="text-align: center;"><a style="text-decoration: none; color: #bbb;" href="#home"> - ThatSnazzyGamer - Use The Arrow Keys To Change Sections - </a></h6>
+                <h6 style="text-align: center;"><a style="text-decoration: none; color: #bbb;" href="#home"> - ThatSnazzyGamer - </a></h6>
             </div>
         </div>
         
@@ -103,17 +103,17 @@
                         currentState = "work";
                         $("#contentContainer").hide("slide", { direction: "left" }, 499);
                         $("#mainContent").delay(500).queue(function(nxt) { $(this).load("workContent.php"); nxt(); });
-                        $("#contentContainer").show("slide", { direction: "left" }, 499);
+                        $("#contentContainer").show("slide", { direction: "right" }, 499);
                     } else if (currentState == "info") {
                         currentState = "home";
                         $("#contentContainer").hide("slide", { direction: "left" }, 499);
                         $("#mainContent").delay(500).queue(function(nxt) { $(this).load("homeContent.php"); nxt(); });
-                        $("#contentContainer").effect("slide", 500);
+                        $("#contentContainer").show("slide", { direction: "right" }, 499);
                     } else if (currentState == "work") {
                         currentState = "info";
                         $("#contentContainer").hide("slide", { direction: "left" }, 499);
                         $("#mainContent").delay(500).queue(function(nxt) { $(this).load("infoContent.php"); nxt(); });
-                        $("#contentContainer").effect("slide", 500); 
+                        $("#contentContainer").show("slide", { direction: "right" }, 499);
                     }
                 });
                 
@@ -148,19 +148,19 @@
                             window.location.has = "work";
                             $("#contentContainer").hide("slide", { direction: "left" }, 499);
                             $("#mainContent").delay(500).queue(function(nxt) { $(this).load("workContent.php"); nxt(); });
-                            $("#contentContainer").show("slide", { direction: "left" }, 499);
+                            $("#contentContainer").show("slide", { direction: "right" }, 499);
                         } else if (currentState == "info") {
                             currentState = "home";
                             window.location.hash = "home";
                             $("#contentContainer").hide("slide", { direction: "left" }, 499);
                             $("#mainContent").delay(500).queue(function(nxt) { $(this).load("homeContent.php"); nxt(); });
-                            $("#contentContainer").effect("slide", 500);
+                            $("#contentContainer").show("slide", { direction: "right" }, 499);
                         } else if (currentState == "work") {
                             currentState = "info";
                             window.location.hash = "info";
                             $("#contentContainer").hide("slide", { direction: "left" }, 499);
                             $("#mainContent").delay(500).queue(function(nxt) { $(this).load("infoContent.php"); nxt(); });
-                            $("#contentContainer").effect("slide", 500); 
+                            $("#contentContainer").show("slide", { direction: "right" }, 499);
                         }   
                    }
                 });
