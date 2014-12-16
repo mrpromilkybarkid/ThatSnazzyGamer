@@ -1,7 +1,9 @@
-var currentState = "home";
+                var currentState = "home";
                 
-                $("#mainContent").html("Loading...");
-                $("#mainContent").load("homeContent.php");
+                function homeLoad() {
+                    $("#mainContent").html("Loading...");
+                    $("#mainContent").load("homeContent.php");
+                }
             
                 $("#loadHomeContent").click(function() {
                     currentState = "home";

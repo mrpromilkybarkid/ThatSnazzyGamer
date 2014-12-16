@@ -13,7 +13,7 @@
 
         <div class="jumbotron" style="margin-top: 0px; background-color: #3399FF;">
             <div class="container">
-                <h1 style="text-align: center; text-shadow: 0px 1px 10px #111;"><a id="loadHome" style="text-decoration: none; color: White;" href="index.php">ThatSnazzyGamer</a></h1>
+                <h1 style="text-align: center; text-shadow: 0px 1px 3px #222;"><a id="loadHome" style="text-decoration: none; color: White;" href="index.php">ThatSnazzyGamer</a></h1>
                 <br />
                 <div class="row">
                     <div class="col-md-offset-5">
@@ -49,6 +49,14 @@
         <script src="js/material.min.js"></script>
         <script src="js/ripples.min.js"></script>
         <script src="js/main.js"></script>
+        
+        <script>
+        
+            $(document).ready(function() {
+                homeLoad();
+            });
+            
+        </script>
         
     </body>
 </html>
